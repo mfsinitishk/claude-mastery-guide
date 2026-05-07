@@ -78,15 +78,15 @@ extra:
 copyright: Copyright &copy; 2026 Claude Mastery Guide
 
 nav:
-  - Home: README.md
+  - Home: index.md
   - Executive Summary:
     - Overview: 00-executive-summary/executive-summary.md
     - Learning Roadmap: 00-executive-summary/learning-roadmap.md
     - Maturity Assessment: 00-executive-summary/maturity-assessment.md
-  
+
   - Level 1 - Foundations:
     - Overview: 01-level-1-foundations/01-overview.md
-    - Introduction to Claude: 01-level-1-foundations/02-introduction-to-claude.md
+    - Introduction to Claude: 01-level-1-foundations/02-claude-introduction.md
     - Interfaces and Setup: 01-level-1-foundations/03-interfaces-and-setup.md
     - Effective Prompting Basics: 01-level-1-foundations/04-effective-prompting-basics.md
     - Context Management Fundamentals: 01-level-1-foundations/05-context-management-fundamentals.md
@@ -180,53 +180,51 @@ nav:
   
   - Level 5 - AI Native:
     - Overview: 05-level-5-ai-native/01-overview.md
-    - AI-Native Development: 05-level-5-ai-native/02-ai-native-development.md
-    - AI-First Engineering: 05-level-5-ai-native/03-ai-first-engineering.md
-    - Autonomous Development: 05-level-5-ai-native/04-autonomous-development.md
-    - Self-Improving Systems: 05-level-5-ai-native/05-self-improving-systems.md
-    - AI Collaboration Networks: 05-level-5-ai-native/06-ai-collaboration-networks.md
+    - AI-Native Workflows: 05-level-5-ai-native/02-ai-native-workflows.md
+    - Autonomous Systems: 05-level-5-ai-native/03-autonomous-systems.md
+    - Multi-Agent Orchestration: 05-level-5-ai-native/04-multi-agent-orchestration.md
+    - AI Software Factories: 05-level-5-ai-native/05-ai-software-factories.md
+    - Self-Improving Workflows: 05-level-5-ai-native/06-self-improving-workflows.md
     - Agent Ecosystems: 05-level-5-ai-native/07-agent-ecosystems.md
-    - Multi-Agent Architectures: 05-level-5-ai-native/08-multi-agent-architectures.md
-    - AI Software Factories: 05-level-5-ai-native/09-ai-software-factories.md
-    - Emergent Workflows: 05-level-5-ai-native/10-emergent-workflows.md
-    - AI-Driven Testing: 05-level-5-ai-native/11-ai-driven-testing.md
-    - Continuous Intelligence: 05-level-5-ai-native/12-continuous-intelligence.md
-    - Adaptive Systems: 05-level-5-ai-native/13-adaptive-systems.md
-    - AI-Native Architecture: 05-level-5-ai-native/14-ai-native-architecture.md
-    - Human-AI Teaming: 05-level-5-ai-native/15-human-ai-teaming.md
-    - Strategic AI Transformation: 05-level-5-ai-native/16-strategic-ai-transformation.md
-    - Future of Development: 05-level-5-ai-native/17-future-of-development.md
-    - AI-First Organizations: 05-level-5-ai-native/18-ai-first-organizations.md
-    - Innovation Practices: 05-level-5-ai-native/19-innovation-practices.md
+    - Advanced MCP: 05-level-5-ai-native/08-advanced-mcp.md
+    - Orchestration Patterns: 05-level-5-ai-native/09-orchestration-patterns.md
+    - Human-in-Loop: 05-level-5-ai-native/10-human-in-loop.md
+    - AI Operating Systems: 05-level-5-ai-native/11-ai-operating-systems.md
+    - AI Platform Engineering: 05-level-5-ai-native/12-ai-platform-engineering.md
+    - Advanced Automation: 05-level-5-ai-native/13-advanced-automation.md
+    - Architecture Evolution: 05-level-5-ai-native/14-architecture-evolution.md
+    - Large-Scale Autonomous: 05-level-5-ai-native/15-large-scale-autonomous.md
+    - Future Trends: 05-level-5-ai-native/16-future-trends.md
+    - Strategic Transformation: 05-level-5-ai-native/17-strategic-transformation.md
+    - Internal Platforms: 05-level-5-ai-native/18-internal-platforms.md
+    - AI-First Organizations: 05-level-5-ai-native/19-ai-first-organizations.md
     - Exercises and Examples: 05-level-5-ai-native/20-exercises-and-examples.md
     - Assessment: 05-level-5-ai-native/21-assessment.md
   
   - Hands-On Labs:
-    - Overview: 06-hands-on-labs/README.md
     - Lab 001 - Basic Prompting: 06-hands-on-labs/lab-001-basic-prompting.md
     - Lab 002 - Code Refactoring: 06-hands-on-labs/lab-002-code-refactoring.md
-    - Lab 003 - Debugging: 06-hands-on-labs/lab-003-debugging-complex-issues.md
-    - Lab 004 - Repository Analysis: 06-hands-on-labs/lab-004-repository-analysis.md
+    - Lab 003 - Debugging: 06-hands-on-labs/lab-003-debugging-complex.md
+    - Lab 004 - Repository Analysis: 06-hands-on-labs/lab-004-repo-analysis.md
     - Lab 005 - Feature Development: 06-hands-on-labs/lab-005-feature-development.md
-    - Lab 006 - PR Review: 06-hands-on-labs/lab-006-pr-review-workflow.md
+    - Lab 006 - PR Review: 06-hands-on-labs/lab-006-pr-review.md
     - Lab 007 - MCP Setup: 06-hands-on-labs/lab-007-mcp-setup.md
     - Lab 008 - Custom Tools: 06-hands-on-labs/lab-008-custom-tools.md
     - Lab 009 - Agent Orchestration: 06-hands-on-labs/lab-009-agent-orchestration.md
-    - Lab 010 - Multi-Repo: 06-hands-on-labs/lab-010-multi-repo-workflow.md
-    - Lab 011 - Team Prompts: 06-hands-on-labs/lab-011-team-prompt-library.md
-    - Lab 012 - AI Governance: 06-hands-on-labs/lab-012-ai-governance.md
+    - Lab 010 - Multi-Repo: 06-hands-on-labs/lab-010-multi-repo.md
+    - Lab 011 - Team Prompts: 06-hands-on-labs/lab-011-prompt-library.md
+    - Lab 012 - AI Governance: 06-hands-on-labs/lab-012-governance.md
     - Lab 013 - Autonomous Testing: 06-hands-on-labs/lab-013-autonomous-testing.md
-    - Lab 014 - Platform Setup: 06-hands-on-labs/lab-014-ai-platform-setup.md
+    - Lab 014 - Platform Setup: 06-hands-on-labs/lab-014-platform-setup.md
     - Lab 015 - Enterprise Integration: 06-hands-on-labs/lab-015-enterprise-integration.md
   
   - Use Cases:
-    - Overview: 07-use-cases/README.md
     - Backend Development: 07-use-cases/backend-development.md
     - Frontend Development: 07-use-cases/frontend-development.md
-    - Full-Stack Development: 07-use-cases/full-stack-development.md
+    - Full-Stack Development: 07-use-cases/fullstack-development.md
     - DevOps Automation: 07-use-cases/devops-automation.md
     - Platform Engineering: 07-use-cases/platform-engineering.md
-    - QA and Testing: 07-use-cases/qa-and-testing.md
+    - QA and Testing: 07-use-cases/qa-testing.md
     - Database Engineering: 07-use-cases/database-engineering.md
     - Cloud Architecture: 07-use-cases/cloud-architecture.md
     - Security Engineering: 07-use-cases/security-engineering.md
@@ -247,7 +245,7 @@ nav:
     - Documentation Prompts: 08-prompt-library/documentation-prompts.md
     - Performance Prompts: 08-prompt-library/performance-prompts.md
     - Security Prompts: 08-prompt-library/security-prompts.md
-    - API Development Prompts: 08-prompt-library/api-development-prompts.md
+    - API Development Prompts: 08-prompt-library/api-prompts.md
     - Database Prompts: 08-prompt-library/database-prompts.md
     - DevOps Prompts: 08-prompt-library/devops-prompts.md
     - Migration Prompts: 08-prompt-library/migration-prompts.md
@@ -257,7 +255,6 @@ nav:
     - Complete Index: 08-prompt-library/INDEX.md
   
   - Best Practices:
-    - Overview: 09-best-practices/README.md
     - Prompt Engineering: 09-best-practices/prompt-engineering.md
     - Context Management: 09-best-practices/context-management.md
     - Token Optimization: 09-best-practices/token-optimization.md
@@ -274,10 +271,9 @@ nav:
     - Enterprise Considerations: 09-best-practices/enterprise-considerations.md
   
   - Troubleshooting:
-    - Overview: 10-troubleshooting/README.md
     - Common Issues: 10-troubleshooting/common-issues.md
     - Performance Optimization: 10-troubleshooting/performance-optimization.md
-    - Context Window Management: 10-troubleshooting/context-window-management.md
+    - Context Window: 10-troubleshooting/context-window.md
     - Token Limits: 10-troubleshooting/token-limits.md
     - Integration Issues: 10-troubleshooting/integration-issues.md
     - MCP Troubleshooting: 10-troubleshooting/mcp-troubleshooting.md
@@ -302,7 +298,6 @@ nav:
     - Scaling Adoption: 11-team-adoption/scaling-adoption.md
   
   - Enterprise Rollout:
-    - Overview: 12-enterprise-rollout/README.md
     - Rollout Strategy: 12-enterprise-rollout/rollout-strategy.md
     - Phased Rollout: 12-enterprise-rollout/phased-rollout.md
     - Governance Framework: 12-enterprise-rollout/governance-framework.md
@@ -320,12 +315,12 @@ nav:
     - Video Resources: 13-resources/video-resources.md
     - GitHub Examples: 13-resources/github-examples.md
     - Community Resources: 13-resources/community-resources.md
-    - Blogs & Articles: 13-resources/blogs-and-articles.md
-    - Courses & Certifications: 13-resources/courses-and-certifications.md
-    - Tools & Integrations: 13-resources/tools-and-integrations.md
-    - MCP Server Directory: 13-resources/mcp-server-directory.md
-    - Books & Publications: 13-resources/books-and-publications.md
-    - Podcasts & Webinars: 13-resources/podcasts-and-webinars.md
+    - Blogs & Articles: 13-resources/blogs-articles.md
+    - Courses & Certifications: 13-resources/courses-certifications.md
+    - Tools & Integrations: 13-resources/tools-integrations.md
+    - MCP Server Directory: 13-resources/mcp-servers.md
+    - Books & Publications: 13-resources/books-publications.md
+    - Podcasts & Webinars: 13-resources/podcasts-webinars.md
   
   - Reference:
     - Overview: 14-reference/README.md
@@ -336,6 +331,6 @@ nav:
     - Keyboard Shortcuts: 14-reference/keyboard-shortcuts.md
     - Configuration Options: 14-reference/configuration-options.md
     - Model Comparison: 14-reference/model-comparison.md
-    - Tool Capabilities: 14-reference/tool-capabilities.md
+    - Tool Capabilities: 14-reference/tool-matrix.md
     - Workflow Patterns: 14-reference/workflow-patterns.md
     - Cheat Sheets: 14-reference/cheat-sheets.md
