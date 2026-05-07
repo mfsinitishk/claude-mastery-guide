@@ -202,6 +202,7 @@ nav:
     - Assessment: 05-level-5-ai-native/21-assessment.md
   
   - Hands-On Labs:
+    - Overview: 06-hands-on-labs/README.md
     - Lab 001 - Basic Prompting: 06-hands-on-labs/lab-001-basic-prompting.md
     - Lab 002 - Code Refactoring: 06-hands-on-labs/lab-002-code-refactoring.md
     - Lab 003 - Debugging: 06-hands-on-labs/lab-003-debugging-complex.md
@@ -219,6 +220,7 @@ nav:
     - Lab 015 - Enterprise Integration: 06-hands-on-labs/lab-015-enterprise-integration.md
   
   - Use Cases:
+    - Overview: 07-use-cases/README.md
     - Backend Development: 07-use-cases/backend-development.md
     - Frontend Development: 07-use-cases/frontend-development.md
     - Full-Stack Development: 07-use-cases/fullstack-development.md
@@ -255,6 +257,7 @@ nav:
     - Complete Index: 08-prompt-library/INDEX.md
   
   - Best Practices:
+    - Overview: 09-best-practices/README.md
     - Prompt Engineering: 09-best-practices/prompt-engineering.md
     - Context Management: 09-best-practices/context-management.md
     - Token Optimization: 09-best-practices/token-optimization.md
@@ -271,6 +274,7 @@ nav:
     - Enterprise Considerations: 09-best-practices/enterprise-considerations.md
   
   - Troubleshooting:
+    - Overview: 10-troubleshooting/README.md
     - Common Issues: 10-troubleshooting/common-issues.md
     - Performance Optimization: 10-troubleshooting/performance-optimization.md
     - Context Window: 10-troubleshooting/context-window.md
@@ -298,6 +302,7 @@ nav:
     - Scaling Adoption: 11-team-adoption/scaling-adoption.md
   
   - Enterprise Rollout:
+    - Overview: 12-enterprise-rollout/README.md
     - Rollout Strategy: 12-enterprise-rollout/rollout-strategy.md
     - Phased Rollout: 12-enterprise-rollout/phased-rollout.md
     - Governance Framework: 12-enterprise-rollout/governance-framework.md
