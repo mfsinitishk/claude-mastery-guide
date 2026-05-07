@@ -1,0 +1,341 @@
+site_name: Claude Mastery Guide
+site_description: Complete Professional Training Curriculum for Mastering Claude AI Development
+site_author: Enterprise AI Training
+site_url: https://YOUR_USERNAME.github.io/claude-mastery-guide
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_USERNAME/claude-mastery-guide
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Replace with your GA4 property
+
+copyright: Copyright &copy; 2026 Claude Mastery Guide
+
+nav:
+  - Home: README.md
+  - Executive Summary:
+    - Overview: 00-executive-summary/executive-summary.md
+    - Learning Roadmap: 00-executive-summary/learning-roadmap.md
+    - Maturity Assessment: 00-executive-summary/maturity-assessment.md
+  
+  - Level 1 - Foundations:
+    - Overview: 01-level-1-foundations/01-overview.md
+    - Introduction to Claude: 01-level-1-foundations/02-introduction-to-claude.md
+    - Interfaces and Setup: 01-level-1-foundations/03-interfaces-and-setup.md
+    - Effective Prompting Basics: 01-level-1-foundations/04-effective-prompting-basics.md
+    - Context Management Fundamentals: 01-level-1-foundations/05-context-management-fundamentals.md
+    - AI-Assisted Coding Basics: 01-level-1-foundations/06-ai-assisted-coding-basics.md
+    - Code Explanation: 01-level-1-foundations/07-code-explanation.md
+    - Refactoring Workflows: 01-level-1-foundations/08-refactoring-workflows.md
+    - Debugging Workflows: 01-level-1-foundations/09-debugging-workflows.md
+    - Documentation Generation: 01-level-1-foundations/10-documentation-generation.md
+    - Unit Test Generation: 01-level-1-foundations/11-unit-test-generation.md
+    - Productivity Fundamentals: 01-level-1-foundations/12-productivity-fundamentals.md
+    - Exercises and Examples: 01-level-1-foundations/13-exercises-and-examples.md
+    - Assessment: 01-level-1-foundations/14-assessment.md
+  
+  - Level 2 - Intermediate:
+    - Overview: 02-level-2-intermediate/01-overview.md
+    - Repository Workflows: 02-level-2-intermediate/02-repository-workflows.md
+    - Multi-File Workflows: 02-level-2-intermediate/03-multi-file-workflows.md
+    - Architectural Analysis: 02-level-2-intermediate/04-architectural-analysis.md
+    - Git Workflows: 02-level-2-intermediate/05-git-workflows.md
+    - PR Review Workflows: 02-level-2-intermediate/06-pr-review-workflows.md
+    - Feature Development: 02-level-2-intermediate/07-feature-development.md
+    - Test Strategy: 02-level-2-intermediate/08-test-strategy.md
+    - API Development: 02-level-2-intermediate/09-api-development.md
+    - Backend-Frontend Workflows: 02-level-2-intermediate/10-backend-frontend-workflows.md
+    - Claude Code Usage: 02-level-2-intermediate/11-claude-code-usage.md
+    - CLI Workflows: 02-level-2-intermediate/12-cli-workflows.md
+    - Context Optimization: 02-level-2-intermediate/13-context-optimization.md
+    - Structured Prompting: 02-level-2-intermediate/14-structured-prompting.md
+    - Reusable Prompts: 02-level-2-intermediate/15-reusable-prompts.md
+    - AI Pair Programming: 02-level-2-intermediate/16-ai-pair-programming.md
+    - Exercises and Examples: 02-level-2-intermediate/17-exercises-and-examples.md
+    - Assessment: 02-level-2-intermediate/18-assessment.md
+  
+  - Level 3 - Advanced:
+    - Overview: 03-level-3-advanced/01-overview.md
+    - MCP Introduction: 03-level-3-advanced/02-mcp-introduction.md
+    - MCP Servers: 03-level-3-advanced/03-mcp-servers.md
+    - Tool Integrations: 03-level-3-advanced/04-tool-integrations.md
+    - IDE Integrations: 03-level-3-advanced/05-ide-integrations.md
+    - Parallel Execution: 03-level-3-advanced/06-parallel-execution.md
+    - Advanced Claude Code: 03-level-3-advanced/07-advanced-claude-code.md
+    - Sub-Agents: 03-level-3-advanced/08-sub-agents.md
+    - Agent Orchestration: 03-level-3-advanced/09-agent-orchestration.md
+    - Autonomous Workflows: 03-level-3-advanced/10-autonomous-workflows.md
+    - Multi-Step Tasks: 03-level-3-advanced/11-multi-step-tasks.md
+    - Multi-Repo Workflows: 03-level-3-advanced/12-multi-repo-workflows.md
+    - Monorepo Workflows: 03-level-3-advanced/13-monorepo-workflows.md
+    - Distributed Context: 03-level-3-advanced/14-distributed-context.md
+    - Memory Strategies: 03-level-3-advanced/15-memory-strategies.md
+    - Hooks: 03-level-3-advanced/16-hooks.md
+    - Commands: 03-level-3-advanced/17-commands.md
+    - Skills: 03-level-3-advanced/18-skills.md
+    - Workflow Automation: 03-level-3-advanced/19-workflow-automation.md
+    - Task Decomposition: 03-level-3-advanced/20-task-decomposition.md
+    - Complex Debugging: 03-level-3-advanced/21-complex-debugging.md
+    - Architecture Reviews: 03-level-3-advanced/22-architecture-reviews.md
+    - Infrastructure Analysis: 03-level-3-advanced/23-infrastructure-analysis.md
+    - Security Reviews: 03-level-3-advanced/24-security-reviews.md
+    - CI/CD Integration: 03-level-3-advanced/25-cicd-integration.md
+    - AI-Assisted DevOps: 03-level-3-advanced/26-ai-assisted-devops.md
+    - Exercises and Examples: 03-level-3-advanced/27-exercises-and-examples.md
+    - Assessment: 03-level-3-advanced/28-assessment.md
+  
+  - Level 4 - Team Scale:
+    - Overview: 04-level-4-team-scale/01-overview.md
+    - Team Collaboration: 04-level-4-team-scale/02-team-collaboration.md
+    - Shared Workflows: 04-level-4-team-scale/03-shared-workflows.md
+    - Shared Context: 04-level-4-team-scale/04-shared-context.md
+    - Shared Prompts: 04-level-4-team-scale/05-shared-prompts.md
+    - Workflow Plugins: 04-level-4-team-scale/06-workflow-plugins.md
+    - Knowledge Sharing: 04-level-4-team-scale/07-knowledge-sharing.md
+    - AI Governance: 04-level-4-team-scale/08-ai-governance.md
+    - Team Enablement: 04-level-4-team-scale/09-team-enablement.md
+    - Organizational Adoption: 04-level-4-team-scale/10-organizational-adoption.md
+    - Standardization: 04-level-4-team-scale/11-standardization.md
+    - AI Engineering Practices: 04-level-4-team-scale/12-ai-engineering-practices.md
+    - AI SDLC Integration: 04-level-4-team-scale/13-ai-sdlc-integration.md
+    - Productivity Systems: 04-level-4-team-scale/14-productivity-systems.md
+    - Delivery Pipelines: 04-level-4-team-scale/15-delivery-pipelines.md
+    - Review & Approval: 04-level-4-team-scale/16-review-approval.md
+    - Coding Standards: 04-level-4-team-scale/17-coding-standards.md
+    - Secure AI Usage: 04-level-4-team-scale/18-secure-ai-usage.md
+    - Compliance: 04-level-4-team-scale/19-compliance.md
+    - Large-Scale Repos: 04-level-4-team-scale/20-large-scale-repos.md
+    - Cross-Team Collaboration: 04-level-4-team-scale/21-cross-team.md
+    - Documentation Systems: 04-level-4-team-scale/22-documentation-systems.md
+    - Enterprise Architecture: 04-level-4-team-scale/23-enterprise-architecture.md
+    - AI Operations: 04-level-4-team-scale/24-ai-operations.md
+    - Exercises and Examples: 04-level-4-team-scale/25-exercises-and-examples.md
+    - Assessment: 04-level-4-team-scale/26-assessment.md
+  
+  - Level 5 - AI Native:
+    - Overview: 05-level-5-ai-native/01-overview.md
+    - AI-Native Development: 05-level-5-ai-native/02-ai-native-development.md
+    - AI-First Engineering: 05-level-5-ai-native/03-ai-first-engineering.md
+    - Autonomous Development: 05-level-5-ai-native/04-autonomous-development.md
+    - Self-Improving Systems: 05-level-5-ai-native/05-self-improving-systems.md
+    - AI Collaboration Networks: 05-level-5-ai-native/06-ai-collaboration-networks.md
+    - Agent Ecosystems: 05-level-5-ai-native/07-agent-ecosystems.md
+    - Multi-Agent Architectures: 05-level-5-ai-native/08-multi-agent-architectures.md
+    - AI Software Factories: 05-level-5-ai-native/09-ai-software-factories.md
+    - Emergent Workflows: 05-level-5-ai-native/10-emergent-workflows.md
+    - AI-Driven Testing: 05-level-5-ai-native/11-ai-driven-testing.md
+    - Continuous Intelligence: 05-level-5-ai-native/12-continuous-intelligence.md
+    - Adaptive Systems: 05-level-5-ai-native/13-adaptive-systems.md
+    - AI-Native Architecture: 05-level-5-ai-native/14-ai-native-architecture.md
+    - Human-AI Teaming: 05-level-5-ai-native/15-human-ai-teaming.md
+    - Strategic AI Transformation: 05-level-5-ai-native/16-strategic-ai-transformation.md
+    - Future of Development: 05-level-5-ai-native/17-future-of-development.md
+    - AI-First Organizations: 05-level-5-ai-native/18-ai-first-organizations.md
+    - Innovation Practices: 05-level-5-ai-native/19-innovation-practices.md
+    - Exercises and Examples: 05-level-5-ai-native/20-exercises-and-examples.md
+    - Assessment: 05-level-5-ai-native/21-assessment.md
+  
+  - Hands-On Labs:
+    - Overview: 06-hands-on-labs/README.md
+    - Lab 001 - Basic Prompting: 06-hands-on-labs/lab-001-basic-prompting.md
+    - Lab 002 - Code Refactoring: 06-hands-on-labs/lab-002-code-refactoring.md
+    - Lab 003 - Debugging: 06-hands-on-labs/lab-003-debugging-complex-issues.md
+    - Lab 004 - Repository Analysis: 06-hands-on-labs/lab-004-repository-analysis.md
+    - Lab 005 - Feature Development: 06-hands-on-labs/lab-005-feature-development.md
+    - Lab 006 - PR Review: 06-hands-on-labs/lab-006-pr-review-workflow.md
+    - Lab 007 - MCP Setup: 06-hands-on-labs/lab-007-mcp-setup.md
+    - Lab 008 - Custom Tools: 06-hands-on-labs/lab-008-custom-tools.md
+    - Lab 009 - Agent Orchestration: 06-hands-on-labs/lab-009-agent-orchestration.md
+    - Lab 010 - Multi-Repo: 06-hands-on-labs/lab-010-multi-repo-workflow.md
+    - Lab 011 - Team Prompts: 06-hands-on-labs/lab-011-team-prompt-library.md
+    - Lab 012 - AI Governance: 06-hands-on-labs/lab-012-ai-governance.md
+    - Lab 013 - Autonomous Testing: 06-hands-on-labs/lab-013-autonomous-testing.md
+    - Lab 014 - Platform Setup: 06-hands-on-labs/lab-014-ai-platform-setup.md
+    - Lab 015 - Enterprise Integration: 06-hands-on-labs/lab-015-enterprise-integration.md
+  
+  - Use Cases:
+    - Overview: 07-use-cases/README.md
+    - Backend Development: 07-use-cases/backend-development.md
+    - Frontend Development: 07-use-cases/frontend-development.md
+    - Full-Stack Development: 07-use-cases/full-stack-development.md
+    - DevOps Automation: 07-use-cases/devops-automation.md
+    - Platform Engineering: 07-use-cases/platform-engineering.md
+    - QA and Testing: 07-use-cases/qa-and-testing.md
+    - Database Engineering: 07-use-cases/database-engineering.md
+    - Cloud Architecture: 07-use-cases/cloud-architecture.md
+    - Security Engineering: 07-use-cases/security-engineering.md
+    - Data Engineering: 07-use-cases/data-engineering.md
+    - Mobile Development: 07-use-cases/mobile-development.md
+    - Legacy Modernization: 07-use-cases/legacy-modernization.md
+    - Incident Response: 07-use-cases/incident-response.md
+    - Technical Documentation: 07-use-cases/technical-documentation.md
+    - Code Migration: 07-use-cases/code-migration.md
+  
+  - Prompt Library:
+    - Overview: 08-prompt-library/README.md
+    - Debugging Prompts: 08-prompt-library/debugging-prompts.md
+    - Refactoring Prompts: 08-prompt-library/refactoring-prompts.md
+    - Architecture Prompts: 08-prompt-library/architecture-prompts.md
+    - Testing Prompts: 08-prompt-library/testing-prompts.md
+    - Code Review Prompts: 08-prompt-library/code-review-prompts.md
+    - Documentation Prompts: 08-prompt-library/documentation-prompts.md
+    - Performance Prompts: 08-prompt-library/performance-prompts.md
+    - Security Prompts: 08-prompt-library/security-prompts.md
+    - API Development Prompts: 08-prompt-library/api-development-prompts.md
+    - Database Prompts: 08-prompt-library/database-prompts.md
+    - DevOps Prompts: 08-prompt-library/devops-prompts.md
+    - Migration Prompts: 08-prompt-library/migration-prompts.md
+    - Analysis Prompts: 08-prompt-library/analysis-prompts.md
+    - Planning Prompts: 08-prompt-library/planning-prompts.md
+    - Collaboration Prompts: 08-prompt-library/collaboration-prompts.md
+    - Complete Index: 08-prompt-library/INDEX.md
+  
+  - Best Practices:
+    - Overview: 09-best-practices/README.md
+    - Prompt Engineering: 09-best-practices/prompt-engineering.md
+    - Context Management: 09-best-practices/context-management.md
+    - Token Optimization: 09-best-practices/token-optimization.md
+    - Security Practices: 09-best-practices/security-practices.md
+    - Code Quality: 09-best-practices/code-quality.md
+    - Testing Practices: 09-best-practices/testing-practices.md
+    - Documentation Practices: 09-best-practices/documentation-practices.md
+    - Collaboration Practices: 09-best-practices/collaboration-practices.md
+    - Performance Optimization: 09-best-practices/performance-optimization.md
+    - Workflow Automation: 09-best-practices/workflow-automation.md
+    - Anti-Patterns: 09-best-practices/anti-patterns.md
+    - Common Mistakes: 09-best-practices/common-mistakes.md
+    - Scaling Considerations: 09-best-practices/scaling-considerations.md
+    - Enterprise Considerations: 09-best-practices/enterprise-considerations.md
+  
+  - Troubleshooting:
+    - Overview: 10-troubleshooting/README.md
+    - Common Issues: 10-troubleshooting/common-issues.md
+    - Performance Optimization: 10-troubleshooting/performance-optimization.md
+    - Context Window Management: 10-troubleshooting/context-window-management.md
+    - Token Limits: 10-troubleshooting/token-limits.md
+    - Integration Issues: 10-troubleshooting/integration-issues.md
+    - MCP Troubleshooting: 10-troubleshooting/mcp-troubleshooting.md
+    - Agent Issues: 10-troubleshooting/agent-issues.md
+    - CLI Issues: 10-troubleshooting/cli-issues.md
+    - Quality Issues: 10-troubleshooting/quality-issues.md
+    - Collaboration Issues: 10-troubleshooting/collaboration-issues.md
+    - Debugging Guide: 10-troubleshooting/debugging-guide.md
+    - Error Messages: 10-troubleshooting/error-messages.md
+  
+  - Team Adoption:
+    - Overview: 11-team-adoption/README.md
+    - Adoption Playbook: 11-team-adoption/adoption-playbook.md
+    - Stakeholder Engagement: 11-team-adoption/stakeholder-engagement.md
+    - Training Program: 11-team-adoption/training-program.md
+    - Pilot Programs: 11-team-adoption/pilot-programs.md
+    - Change Management: 11-team-adoption/change-management.md
+    - Success Metrics: 11-team-adoption/success-metrics.md
+    - ROI Measurement: 11-team-adoption/roi-measurement.md
+    - Feedback Loops: 11-team-adoption/feedback-loops.md
+    - Resistance Patterns: 11-team-adoption/resistance-patterns.md
+    - Scaling Adoption: 11-team-adoption/scaling-adoption.md
+  
+  - Enterprise Rollout:
+    - Overview: 12-enterprise-rollout/README.md
+    - Rollout Strategy: 12-enterprise-rollout/rollout-strategy.md
+    - Phased Rollout: 12-enterprise-rollout/phased-rollout.md
+    - Governance Framework: 12-enterprise-rollout/governance-framework.md
+    - Security & Compliance: 12-enterprise-rollout/security-compliance.md
+    - Infrastructure: 12-enterprise-rollout/infrastructure.md
+    - Integration Architecture: 12-enterprise-rollout/integration-architecture.md
+    - Cost Management: 12-enterprise-rollout/07-cost-management.md
+    - Scaling Guide: 12-enterprise-rollout/08-scaling-guide.md
+    - Risk Management: 12-enterprise-rollout/09-risk-management.md
+    - Organizational Structure: 12-enterprise-rollout/10-organizational-structure.md
+  
+  - Resources:
+    - Overview: 13-resources/README.md
+    - Documentation Links: 13-resources/documentation-links.md
+    - Video Resources: 13-resources/video-resources.md
+    - GitHub Examples: 13-resources/github-examples.md
+    - Community Resources: 13-resources/community-resources.md
+    - Blogs & Articles: 13-resources/blogs-and-articles.md
+    - Courses & Certifications: 13-resources/courses-and-certifications.md
+    - Tools & Integrations: 13-resources/tools-and-integrations.md
+    - MCP Server Directory: 13-resources/mcp-server-directory.md
+    - Books & Publications: 13-resources/books-and-publications.md
+    - Podcasts & Webinars: 13-resources/podcasts-and-webinars.md
+  
+  - Reference:
+    - Overview: 14-reference/README.md
+    - Glossary: 14-reference/glossary.md
+    - Command Reference: 14-reference/command-reference.md
+    - API Reference: 14-reference/api-reference.md
+    - Quick Reference: 14-reference/quick-reference.md
+    - Keyboard Shortcuts: 14-reference/keyboard-shortcuts.md
+    - Configuration Options: 14-reference/configuration-options.md
+    - Model Comparison: 14-reference/model-comparison.md
+    - Tool Capabilities: 14-reference/tool-capabilities.md
+    - Workflow Patterns: 14-reference/workflow-patterns.md
+    - Cheat Sheets: 14-reference/cheat-sheets.md
