@@ -1,5 +1,28 @@
+# OS Files
 .DS_Store
 *.swp
 *.swo
 *~
+
+# Claude
 .claude/
+
+# Python
+venv/
+*.pyc
+__pycache__/
+
+# MkDocs
+site/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Secrets
+*.key
+*.pem
+secrets.yml
+secrets.json
+credentials.json
