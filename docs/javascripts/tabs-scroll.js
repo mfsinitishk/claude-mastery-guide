@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-  var inner = document.querySelector(".md-tabs__inner");
+  var tabs = document.querySelector(".md-tabs");
   var list = document.querySelector(".md-tabs__list");
-  if (!inner || !list) return;
+  if (!tabs || !list) return;
 
-  // Create scroll arrow buttons
   var leftBtn = document.createElement("button");
   leftBtn.className = "md-tabs-scroll-btn md-tabs-scroll-btn--left";
   leftBtn.setAttribute("aria-label", "Scroll tabs left");
@@ -16,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   rightBtn.innerHTML = "&#9654;";
   rightBtn.hidden = true;
 
-  inner.style.position = "relative";
-  inner.appendChild(leftBtn);
-  inner.appendChild(rightBtn);
+  tabs.appendChild(leftBtn);
+  tabs.appendChild(rightBtn);
 
   function updateIndicators() {
     var scrollLeft = list.scrollLeft;
@@ -29,25 +27,22 @@ document.addEventListener("DOMContentLoaded", function () {
     var atEnd = scrollLeft >= maxScroll - threshold;
     var isScrollable = maxScroll > threshold;
 
-    // Toggle fade gradients
     if (atStart) {
-      inner.classList.remove("scrolled-right");
+      tabs.classList.remove("scrolled-right");
     } else {
-      inner.classList.add("scrolled-right");
+      tabs.classList.add("scrolled-right");
     }
 
     if (atEnd || !isScrollable) {
-      inner.classList.add("scrolled-end");
+      tabs.classList.add("scrolled-end");
     } else {
-      inner.classList.remove("scrolled-end");
+      tabs.classList.remove("scrolled-end");
     }
 
-    // Toggle arrow buttons
     leftBtn.hidden = atStart || !isScrollable;
     rightBtn.hidden = atEnd || !isScrollable;
   }
 
-  // Scroll by ~3 tab widths on click
   leftBtn.addEventListener("click", function () {
     list.scrollBy({ left: -300, behavior: "smooth" });
   });
@@ -59,10 +54,8 @@ document.addEventListener("DOMContentLoaded", function () {
   list.addEventListener("scroll", updateIndicators);
   window.addEventListener("resize", updateIndicators);
 
-  // Initial check
   updateIndicators();
 
-  // Add a subtle pulse on the right arrow to draw attention on first load
   if (!rightBtn.hidden) {
     rightBtn.classList.add("hint-pulse");
     rightBtn.addEventListener("animationend", function () {
