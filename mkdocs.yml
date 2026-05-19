@@ -327,6 +327,11 @@ nav:
     - Books & Publications: 13-resources/books-publications.md
     - Podcasts & Webinars: 13-resources/podcasts-webinars.md
   
+  - Tool Guides:
+    - Overview: 15-tool-guides/README.md
+    - OpenSpec - Spec-Driven Development: 15-tool-guides/openspec-guide.md
+    - HumanLayer - Human-in-the-Loop: 15-tool-guides/humanlayer-guide.md
+
   - Reference:
     - Overview: 14-reference/README.md
     - Glossary: 14-reference/glossary.md
