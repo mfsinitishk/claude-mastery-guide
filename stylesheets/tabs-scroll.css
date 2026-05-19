@@ -1,0 +1,99 @@
+/* ── Tab bar scroll indicators ── */
+/* Structure: .md-tabs > .md-grid > .md-tabs__list > .md-tabs__item */
+
+.md-tabs__list {
+  scroll-behavior: smooth;
+}
+
+/* The .md-tabs element is the full-width colored bar -- use it for gradients */
+.md-tabs {
+  position: relative;
+}
+
+/* Fade gradient on the right edge when more tabs exist */
+.md-tabs::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(to right, transparent, var(--md-primary-fg-color));
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Fade on the left edge when scrolled right */
+.md-tabs::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  background: linear-gradient(to left, transparent, var(--md-primary-fg-color));
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* JS toggles these classes based on scroll position */
+.md-tabs.scrolled-right::before {
+  opacity: 1;
+}
+
+.md-tabs.scrolled-end::after {
+  opacity: 0;
+}
+
+/* ── Scroll arrow buttons ── */
+.md-tabs-scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--md-primary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.md-tabs-scroll-btn:hover {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.15);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.md-tabs-scroll-btn--left {
+  left: 8px;
+}
+
+.md-tabs-scroll-btn--right {
+  right: 8px;
+}
+
+.md-tabs-scroll-btn[hidden] {
+  display: none;
+}
+
+/* Subtle bounce animation on first load to draw attention */
+@keyframes scroll-hint-pulse {
+  0%, 100% { transform: translateY(-50%) translateX(0); }
+  50% { transform: translateY(-50%) translateX(5px); }
+}
+
+.md-tabs-scroll-btn--right.hint-pulse {
+  animation: scroll-hint-pulse 0.8s ease-in-out 4;
+}
