@@ -337,6 +337,8 @@ nav:
     - Overview: 15-tool-guides/README.md
     - OpenSpec - Spec-Driven Development: 15-tool-guides/openspec-guide.md
     - HumanLayer - Human-in-the-Loop: 15-tool-guides/humanlayer-guide.md
+    - Spec-Kit - GitHub SDD Toolkit: 15-tool-guides/spec-kit-guide.md
+    - Superpowers - Disciplined AI Dev: 15-tool-guides/superpowers-guide.md
 
   - Reference:
     - Overview: 14-reference/README.md
